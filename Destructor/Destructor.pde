@@ -3,17 +3,49 @@
 // Autores:
 // Jose Eugenio Vargas Vargas codigo 2192137
 // Andres Saavedra codigo 21*****
-
+virus[] corona = new virus[10];
 PImage inicio;
-PImage mantel;
-PImage cucaracha;
+PImage fondo;
+PImage virrus;
+boolean comienzo = true;
+int puntaje = 0;
+int maxpuntaje = 0;
+int savedTime;
+int totalTime = 15000;
 
 void setup(){
   size(800,800);
   inicio = loadImage("inicio.jpg");
-  mantel = loadImage("mantel.jpg");
-  cucaracha = loadImage("cucaracha.png");
+  fondo = loadImage("fondo.jpg");
+  virrus = loadImage("virus.png");
+  savedTime = millis();
+  
+  for(int i=0; i<corona.length; i++) {
+    corona[i] = new virus(random(width),random(height),100);  
+  }
 }
 void draw(){
-  background(mantel);
+  background(fondo);
+  
+  if (keyPressed) {
+    if (key == 'y' || key == 'Y') {
+       comienzo = false;
+    }
+  }
+  if (comienzo==true)
+  {
+    image(inicio, 0, 0);
+    fill(#000000);
+    text("Tu puntaje: "+maxpuntaje,220,440);
+  }
+  else {
+    for(int i=0; i<corona.length; i++) {  
+     corona[i].velocidad();
+     corona[i].colision();
+     corona[i].display(); 
+     corona[i].destruir(); 
+     corona[i].puntaje(); 
+     corona[i].terminado(); 
+    }
+  }
 }
