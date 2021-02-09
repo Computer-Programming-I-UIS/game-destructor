@@ -7,6 +7,7 @@ virus[] corona = new virus[10];
 PImage inicio;
 PImage fondo;
 PImage virrus;
+PImage jabon;
 boolean comienzo = true;
 int puntaje = 0;
 int maxpuntaje = 0;
@@ -14,10 +15,13 @@ int savedTime;
 int totalTime = 15000;
 
 void setup(){
-  size(800,800);
+  size(600,600);
   inicio = loadImage("inicio.jpg");
   fondo = loadImage("fondo.jpg");
-  virrus = loadImage("virus.png");
+  virrus = loadImage("virus.png"); 
+  jabon = loadImage("jabon.png");
+
+  
   savedTime = millis();
   
   for(int i=0; i<corona.length; i++) {
@@ -36,7 +40,6 @@ void draw(){
   {
     image(inicio, 0, 0);
     fill(#000000);
-    text("Tu puntaje: "+maxpuntaje,220,440);
   }
   else {
     for(int i=0; i<corona.length; i++) {  

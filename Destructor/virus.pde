@@ -2,6 +2,8 @@ class virus{
   float x;
   float y;
   float d;
+  int z;
+  int c;
   float xvel;
   float yvel;
   
@@ -10,8 +12,8 @@ class virus{
     y = posY;
     d = diametro;
     
-    xvel = random(-5,5);
-    yvel = random(-5,5);//velocidad de movimiento 
+    xvel = random(-3);
+    yvel = random(-3);//velocidad de movimiento 
   }
   
   void velocidad(){
@@ -35,7 +37,8 @@ class virus{
     }
     
     void destruir() { 
-     if (mousePressed) { 
+ if (mouseButton == LEFT) {
+      cursor(jabon, z, c);
       float distancia = dist(mouseX, mouseY, x, y);
       if (distancia<d) {
           xvel = 0;
@@ -45,11 +48,14 @@ class virus{
           maxpuntaje = max(puntaje, maxpuntaje);
            }
          } 
+          else {
+           cursor(ARROW);
+         }
       }
-      
+
       void puntaje() { 
     fill(#000000);
-    text("Puntaje: "+puntaje,10,20);  
+    text("Puntaje: "+puntaje,20,20);  
   }
   
    void terminado() { 
