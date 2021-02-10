@@ -2,36 +2,37 @@
 // Programacion de computadores 1
 // Autores:
 // Jose Eugenio Vargas Vargas codigo 2192137
-// Andres Saavedra codigo 21*****
-virus[] corona = new virus[10];
-PImage inicio;
+// Andres David Saavedra Rincon 2162891
+virus[] corona = new virus[50];//total de virus 
+molecula[] oxigeno = new molecula[5];//total de moleculas
+PImage inicio;//imagenes
 PImage fondo;
 PImage virrus;
 PImage jabon;
+PImage oxigenoo;
 boolean comienzo = true;
 int puntaje = 0;
-int maxpuntaje = 0;
-int savedTime;
-int totalTime = 15000;
+
 
 void setup(){
-  size(600,600);
+  size(600,600);//tamaño de pantalla
   inicio = loadImage("inicio.jpg");
   fondo = loadImage("fondo.jpg");
   virrus = loadImage("virus.png"); 
   jabon = loadImage("jabon.png");
-
-  
-  savedTime = millis();
+  oxigenoo = loadImage("oxigeno.png");
   
   for(int i=0; i<corona.length; i++) {
-    corona[i] = new virus(random(width),random(height),100);  
+    corona[i] = new virus(random(300,500),random(300,500),50);  
+  }
+  for(int i=0; i<oxigeno.length; i++) {
+    oxigeno[i] = new molecula(random(300,500),random(300,500),50);  
   }
 }
 void draw(){
-  background(fondo);
+  background(fondo);//fondo juego
   
-  if (keyPressed) {
+  if (keyPressed) {//para salir de la pantalla de inicio
     if (key == 'y' || key == 'Y') {
        comienzo = false;
     }
@@ -42,13 +43,20 @@ void draw(){
     fill(#000000);
   }
   else {
-    for(int i=0; i<corona.length; i++) {  
+    for(int i=0; i<oxigeno.length; i++) { // llamados oxigeno
+     oxigeno[i].ovelocidad();
+     oxigeno[i].ocolision();
+     oxigeno[i].odisplay(); 
+     oxigeno[i].odestruir(); 
+    }
+    
+    for(int i=0; i<corona.length; i++) {  // llamados virus
      corona[i].velocidad();
      corona[i].colision();
      corona[i].display(); 
      corona[i].destruir(); 
      corona[i].puntaje(); 
-     corona[i].terminado(); 
+     corona[i].terminado();
     }
-  }
-}
+   }
+ }
