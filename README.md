@@ -1,6 +1,8 @@
 ## JUEGO DESTRUCTOR
 Autores
+
 Jose Eugenio Vargas Vargas 2192137
+
 Andres David Saavedra Rincon 2162891
 
 ###Introduccion
