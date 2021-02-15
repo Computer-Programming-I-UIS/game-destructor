@@ -37,7 +37,7 @@ class virus{
     }
     
     void destruir() { //condicionales para sacar de la pantalla los virus
- if (mousePressed) {
+    if (mousePressed) {
       cursor(jabon, z, c);
       float distancia = dist(mouseX, mouseY, x, y);
       if (distancia<d) {
@@ -45,16 +45,14 @@ class virus{
           yvel = 0;
           x = -1600;
           puntaje++;
-          }
-         } 
-          else {
-           cursor(jabon, z, c);
-         }
-      }
+        }
+      } 
+    }
 
       void puntaje() { //cantidad de virus eliminados
     fill(#FFFFFF);
-    text("Puntaje: "+puntaje,20,20);  
+    textSize(30);
+    text("Puntaje: "+puntaje,20,80);  
   }
    void terminado() { // devuelve a la pantalla de inicio cuando el puntaje es = 50
     
