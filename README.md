@@ -1,5 +1,5 @@
 ## JUEGO DESTRUCTOR
-Autores
+### Autores
 
 Jose Eugenio Vargas Vargas 2192137
 
