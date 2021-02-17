@@ -22,6 +22,13 @@ Con el puntero del mouse debemos dar click encima de cada coronavirus para que a
 
 Dentro del juego manteniendo presionado "C" se podran ver los creditos y manteniendo presionado "K" se podran ver nuevamente las instrucciones del juego
 
+### Clasificacion
+![clasificacion.PNG](https://www.dropbox.com/s/jszp7qo08rpo30p/clasificacion.PNG?dl=0&raw=1)
+
+Apto para todo el publico
+
+Juego tipo arcade
+
 ### Requisitos para jugar destructor
 - Contar con un computador
 - Instalar la ultima version de processing [https://processing.org/download/]
