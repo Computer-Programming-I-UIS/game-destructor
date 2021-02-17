@@ -32,11 +32,13 @@ Juego tipo arcade
 ### Requisitos para jugar destructor
 - Contar con un computador
 - Instalar la ultima version de processing [https://processing.org/download/]
+- Instalar la libreria sound para reproducir el sonido
 - Tener mouse y teclado
 
 ### Creditos
 - Jose Vargas Estudiante ingeniería eléctrica
 - Andres Saavedra Estudiante ingeniería eléctrica
+- Sonido FITTYSOUND [https://www.fiftysounds.com/es/musica-libre-de-derechos/efectos-de-sonido-gratis.html]
 
 ### Referencias
 - AIRROOM CANAL DE YOUTUBE [https://www.youtube.com/channel/UCUz9-NhJbTjd7PkVI15NnxQ]
