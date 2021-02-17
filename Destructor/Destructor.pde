@@ -3,8 +3,10 @@
 // Autores:
 // Jose Eugenio Vargas Vargas codigo 2192137
 // Andres David Saavedra Rincon 2162891
+import processing.sound.*;
 virus[] corona = new virus[50];//total de virus 
 molecula[] oxigeno = new molecula[5];//total de moleculas
+SoundFile file;
 PImage inicio;//imagenes
 PImage fondo;
 PImage virrus;
@@ -25,7 +27,9 @@ void setup(){
   oxigenoo = loadImage("oxigeno.png");
   instruccion = loadImage("instruccion.png");
   creditos = loadImage("creditos.png");
-  
+  file = new SoundFile(this,"sonido.mp3");
+  file.play();
+  file.amp(1);
   for(int i=0; i<corona.length; i++) {
     corona[i] = new virus(random(300,500),random(300,500),50);  
   }
