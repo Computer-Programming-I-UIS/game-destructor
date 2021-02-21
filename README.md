@@ -38,6 +38,8 @@ Juego tipo arcade
 ### CREDITOS
 - Jose Vargas Estudiante ingeniería eléctrica
 - Andres Saavedra Estudiante ingeniería eléctrica
+- Sonido FITTYSOUND [https://www.fiftysounds.com/es/musica-libre-de-derechos/efectos-de-sonido-gratis.html]}
+- Imagenes BANCO DE IMAGENES [https://sp.depositphotos.com/] ; [http://pngimg.com/]
 
 ### REFERENCIAS
 - AIRROOM CANAL DE YOUTUBE [https://www.youtube.com/channel/UCUz9-NhJbTjd7PkVI15NnxQ]
