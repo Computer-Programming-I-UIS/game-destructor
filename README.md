@@ -26,6 +26,7 @@ Dentro del juego manteniendo presionado "C" se podran ver los creditos y manteni
 ### REQUISITOS MINIMOS
 - Contar con un computador
 - Instalar la ultima version de processing [https://processing.org/download/]
+- Instalar la libreria sound para reproducir el sonido
 - Tener mouse y teclado
 
 ### CLASIFICACION
