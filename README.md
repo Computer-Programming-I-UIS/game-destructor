@@ -12,6 +12,10 @@ La vacuna ataca tanto a los virus como al oxigeno del cuerpo, nuestro objetivo e
 
 ![INCORRECTO.png](https://www.dropbox.com/s/7rkn9gcp1dikzh1/INCORRECTO.png?dl=0&raw=1)
 
+### TRAILER
+
+https://youtu.be/h77IMvOK_gc
+
 
 
 ### FUNCIONALIDAD
