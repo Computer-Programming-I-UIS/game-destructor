@@ -51,8 +51,8 @@ class virus{
 
       void puntaje() { //cantidad de virus eliminados
     fill(#FFFFFF);
-    textSize(30);
-    text("Puntaje: "+puntaje,20,80);  
+    textSize(25);
+    text("VIRUS ELIMINADOS: "+puntaje,20,80);  
   }
    void terminado() { // devuelve a la pantalla de inicio cuando el puntaje es = 50
     
