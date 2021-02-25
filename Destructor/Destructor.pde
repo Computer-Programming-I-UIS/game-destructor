@@ -27,10 +27,10 @@ void setup(){
   oxigenoo = loadImage("oxigeno.png");
   instruccion = loadImage("instruccion.png");
   creditos = loadImage("creditos.png");
-  file = new SoundFile(this,"sonido.mp3");
-  file.play();
+  file = new SoundFile(this,"final.mp3");
+   file.play();
   file.amp(1);
-  for(int i=0; i<corona.length; i++) {
+    for(int i=0; i<corona.length; i++) {
     corona[i] = new virus(random(300,500),random(300,500),50);  
   }
   for(int i=0; i<oxigeno.length; i++) {
